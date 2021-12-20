@@ -43,8 +43,8 @@ impl TreeNode {
         let right = Self::new(right);
         TreeNode {
             val,
-            left: Some(Rc::new(RefCell::new(right))),
-            right: None,
+            left: None,
+            right: Some(Rc::new(RefCell::new(right))),
         }
     }
 }
